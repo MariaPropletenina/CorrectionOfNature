@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="CorrectionOfNature.Views.RegistPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="personality.jpg" HeightRequest="100" Margin="0,25,0,0" />
+            <Label Text="Имя"
+                   Margin="-240,30,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="user.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="nameEntry" TextColor="#5246EA" Margin="70,0" />
+            <Label Text="Email"
+                   Margin="-230,10,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="email.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="emailEntry" TextColor="#5246EA" Margin="70,0" />
+            <Label Text="Пароль"
+                   Margin="-220,10,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="password.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="passwordEntry" TextColor="#5246EA" IsPassword="True" Margin="70,0" />
+            <Label Text="Номер телефона"
+                   Margin="-160,10,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="phone.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="phoneNumberEntry" TextColor="#5246EA" Margin="70,0" />
+            <Button x:Name="RegiserButton" Text="Зарегистрироваться" CornerRadius="32" Margin="70,20" Clicked="RegiserButton_Clicked" />
+            <Button x:Name="SignInButton" Text="Войти" Margin="-10" Clicked="SignInButton_Clicked"  TextColor="#5246EA" BackgroundColor="#95FFFFFF" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

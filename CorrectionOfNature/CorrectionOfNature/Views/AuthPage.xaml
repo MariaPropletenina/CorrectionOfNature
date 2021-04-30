@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="CorrectionOfNature.Views.AuthPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image Source="personality.jpg" HeightRequest="100" Margin="0,50,0,0" />
+            <Label Text="Имя"
+                   Margin="-235,50,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="user.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="nameEntry" Margin="70,0" TextColor="#5246EA" />
+            <Label Text="Пароль"
+                   Margin="-210,20,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="password.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="passwordEntry" IsPassword="True" Margin="70,0" TextColor="#5246EA" />
+            <Button x:Name="LoginButton" Text="Войти" CornerRadius="32" Margin="70,50" Clicked="LoginButton_Clicked" />
+            <Button x:Name="SignUpButton" Text="Зарегистрироваться" Margin="-30" TextColor="#5246EA" BackgroundColor="#95FFFFFF" Clicked="SignUpButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

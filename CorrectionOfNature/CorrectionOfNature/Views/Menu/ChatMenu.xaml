@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             xmlns:views="clr-namespace:CorrectionOfNature.Views"
+             xmlns:menu="clr-namespace:CorrectionOfNature.Views.Menu"
+             xmlns:local="clr-namespace:CorrectionOfNature.Data"
+             x:Class="CorrectionOfNature.Views.Menu.ChatMenu">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:MyDataTemplateSelector x:Key="MessageTemplateSelector">
+            </local:MyDataTemplateSelector>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+
+        <Grid x:Name="Flyout" BackgroundColor="Transparent" Margin="0" Padding="0">
+            <Grid.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left"
+                                        Swiped="FlyoutClose" />
+            </Grid.GestureRecognizers>
+            <menu:MenuPage />
+        </Grid>
+
+        <Frame x:Name="ChatContent" BackgroundColor="White" Margin="0" Padding="0">
+            <Frame.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Right"
+                                        Swiped="FlyoutOpen" />
+            </Frame.GestureRecognizers>
+            <!--<views:ChatPage ToggleMenu="OnToggleMenu" />-->
+
+            <!--<StackLayout VerticalOptions="Center" 
+        HorizontalOptions="CenterAndExpand">
+                <Label x:Name="NameLabel" />
+                <Entry x:Name="UserName" Placeholder="What's your name?" WidthRequest="200"/>
+                <Button Text="Sign up" Clicked="Button_Clicked"></Button>
+            </StackLayout>-->
+
+            <RelativeLayout>
+                <ListView Grid.Row="0" x:Name="MessagesListView" HasUnevenRows="true" SeparatorVisibility="None" ItemTemplate="{StaticResource MessageTemplateSelector}" ItemsSource="{Binding Messages}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}" />
+                <Grid x:Name="MessageControls" RowSpacing="1" ColumnSpacing="2" Padding="5" BackgroundColor="#EFEFF4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=MessagesListView, Property=Height,Factor=.91,Constant=0}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=MessagesListView, Property=Height,Factor=.09,Constant=0}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="Auto">
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Entry Grid.Column="0" HeightRequest="25" Placeholder="Сообщение..." x:Name="txtMessage" Text="{Binding MessageText, Mode=TwoWay}" />
+                    <Button Grid.Column="1" Text="Отправить" CommandParameter="{Binding Source={x:Reference Name=txtMessage}, Path=Text}" Command="{Binding SendMessage}" />
+                </Grid>
+            </RelativeLayout>
+
+        </Frame>
+
+    </Grid>
+</ContentPage>
