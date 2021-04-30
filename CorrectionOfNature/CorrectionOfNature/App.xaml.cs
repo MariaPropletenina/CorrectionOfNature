@@ -13,7 +13,16 @@ namespace CorrectionOfNature
     {
         public const int QUESTIONS_COUNT = 88;
         public static int CurrentQuestion = 1;
-        public static int Score = 0;
+        public static int Score1 = 0;
+        public static int Score2 = 0;
+        public static int Score3 = 0;
+        public static int Score4 = 0;
+        public static int Score5 = 0;
+        public static int Score6 = 0;
+        public static int Score7 = 0;
+        public static int Score8 = 0;
+        public static int Score9 = 0;
+        public static int Score10 = 0;
         public static string Username = "";
     }
 

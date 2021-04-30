@@ -14,8 +14,15 @@ namespace CorrectionOfNature.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SingleQuiz : ContentPage
     {
-        int _choice = 0;
-        int score = 1;
+        int choice1, choice2, choice3, choice4, choice5, choice6, choice7, choice8, choice9, choice10, choice11,
+            choice12, choice13, choice14, choice15, choice16, choice17, choice18, choice19, choice20, choice21,
+            choice22, choice23, choice24, choice25, choice26, choice27, choice28, choice29, choice30, choice31,
+            choice32, choice33, choice34, choice35, choice36, choice37, choice38, choice39, choice40, choice41,
+            choice42, choice43, choice44, choice45, choice46, choice47, choice48, choice49, choice50, choice51, 
+            choice52, choice53, choice54, choice55, choice56, choice57, choice58, choice59, choice60, choice61, 
+            choice62, choice63, choice64, choice65, choice66, choice67, choice68, choice69, choice70, choice71, 
+            choice72, choice73, choice74, choice75, choice76, choice77, choice78, choice79, choice80, choice81, 
+            choice82, choice83, choice84, choice85, choice86, choice87, choice88 = 0;
 
         public SingleQuiz()
         {
@@ -32,533 +39,521 @@ namespace CorrectionOfNature.Views
                 if (((QuestionViewModel)BindingContext).CheckQuestion("Да") 
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(1))
                 {
-                    AppSettings.Score += score;
+                    //AppSettings.Score += score;
+                    choice1 += 1;
                     DoAnswer();
                     //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(2))
                 {
-                    AppSettings.Score += score;
+                    choice2 += 1;
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(3))
                 {
-                    AppSettings.Score += score;
+                    choice3 += 1;
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(4))
                 {
-                    AppSettings.Score += score;
+                    choice4 += 1;
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(5))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(6))
                 {
-                    AppSettings.Score += score;
+                    choice6 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(7))
                 {
-                    AppSettings.Score += score;
+                    choice7 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(8))
                 {
-                    AppSettings.Score += score;
+                    choice8 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(9))
                 {
-                    AppSettings.Score += score;
+                    choice9 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(10))
                 {
-                    AppSettings.Score += score;
+                    choice10 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(11))
                 {
-                    AppSettings.Score += score;
+                    choice11 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(12))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(13))
                 {
-                    AppSettings.Score += score;
+                    choice13 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(14))
                 {
-                    AppSettings.Score += score;
+                    choice14 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(15))
                 {
-                    AppSettings.Score += score;
+                    choice15 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(16))
                 {
-                    AppSettings.Score += score;
+                    choice16 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(17))
                 {
-                    AppSettings.Score += score;
+                    choice17 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(18))
                 {
-                    AppSettings.Score += score;
+                    choice18 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(19))
                 {
-                    AppSettings.Score += score;
+                    choice19 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(20))
                 {
-                    AppSettings.Score += score;
+                    choice20 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(21))
                 {
-                    AppSettings.Score += score;
+                    choice21 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(22))
                 {
-                    AppSettings.Score += score;
+                    choice22 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(23))
                 {
-                    AppSettings.Score += score;
+                    choice23 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(24))
                 {
-                    AppSettings.Score += score;
+                    choice24 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(25))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(26))
                 {
-                    AppSettings.Score += score;
+                    choice26 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(27))
                 {
-                    AppSettings.Score += score;
+                    choice27 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(28))
                 {
-                    AppSettings.Score += score;
+                    choice28 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(29))
                 {
-                    AppSettings.Score += score;
+                    choice29 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(30))
                 {
-                    AppSettings.Score += score;
+                    choice30 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(31))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(32))
                 {
-                    AppSettings.Score += score;
+                    choice32 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(33))
                 {
-                    AppSettings.Score += score;
+                    choice33 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(34))
                 {
-                    AppSettings.Score += score;
+                    choice34 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(35))
                 {
-                    AppSettings.Score += score;
+                    choice35 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(36))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(37))
                 {
-                    AppSettings.Score += score;
+                    choice37 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(38))
                 {
-                    AppSettings.Score += score;
+                    choice38 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(39))
                 {
-                    AppSettings.Score += score;
+                    choice39 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(40))
                 {
-                    AppSettings.Score += score;
+                    choice40 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(41))
                 {
-                    AppSettings.Score += score;
+                    choice41 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(42))
                 {
-                    AppSettings.Score += score;
+                    choice42 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(43))
                 {
-                    AppSettings.Score += score;
+                    choice43 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(44))
                 {
-                    AppSettings.Score += score;
+                    choice44 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(45))
                 {
-                    AppSettings.Score += score;
+                    choice45 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(46))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(47))
                 {
-                    AppSettings.Score += score;
+                    choice47 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(48))
                 {
-                    AppSettings.Score += score;
+                    choice48 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(49))
                 {
-                    AppSettings.Score += score;
+                    choice49 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(50))
                 {
-                    AppSettings.Score += score;
+                    choice50 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(51))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(52))
                 {
-                    AppSettings.Score += score;
+                    choice52 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(53))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(54))
                 {
-                    AppSettings.Score += score;
+                    choice54 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(55))
                 {
-                    AppSettings.Score += score;
+                    choice55 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(56))
                 {
-                    AppSettings.Score += score;
+                    choice56 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(57))
                 {
-                    AppSettings.Score += score;
+                    choice57 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(58))
                 {
-                    AppSettings.Score += score;
+                    choice58 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(59))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(60))
                 {
-                    AppSettings.Score += score;
+                    choice60 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(61))
                 {
-                    AppSettings.Score += score;
+                    choice61 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(62))
                 {
-                    AppSettings.Score += score;
+                    choice62 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(63))
                 {
-                    AppSettings.Score += score;
+                    choice63 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(64))
                 {
-                    AppSettings.Score += score;
+                    choice64 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(65))
                 {
-                    AppSettings.Score += score;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(66))
                 {
-                    AppSettings.Score += score;
+                    choice66 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(67))
                 {
-                    AppSettings.Score += score;
+                    choice67 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(68))
                 {
-                    AppSettings.Score += score;
+                    choice68 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(69))
                 {
-                    AppSettings.Score += score;
+                    choice69 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(70))
                 {
-                    AppSettings.Score += score;
+                    choice70 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(71))
                 {
-                    AppSettings.Score += score;
+                    choice71 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(72))
                 {
-                    AppSettings.Score += score;
+                    choice72 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(73))
                 {
-                    AppSettings.Score += score;
+                    choice73 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(74))
                 {
-                    AppSettings.Score += score;
+                    choice74 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(75))
                 {
-                    AppSettings.Score += score;
+                    choice75 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(76))
                 {
-                    AppSettings.Score += score;
+                    choice76 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(77))
                 {
-                    AppSettings.Score += score;
+                    choice77 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(78))
                 {
-                    AppSettings.Score += score;
+                    choice78 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(79))
                 {
-                    AppSettings.Score += score;
+                    choice79 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(80))
                 {
-                    AppSettings.Score += score;
+                    choice80 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(81))
                 {
-                    AppSettings.Score += score;
+                    choice81 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(82))
                 {
-                    AppSettings.Score += score;
+                    choice82 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(83))
                 {
-                    AppSettings.Score += score;
+                    choice83 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(84))
                 {
-                    AppSettings.Score += score;
+                    choice84 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(85))
                 {
-                    AppSettings.Score += score;
+                    choice85 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(86))
                 {
-                    AppSettings.Score += score;
+                    choice86 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(87))
                 {
-                    AppSettings.Score += score;
+                    choice87 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Да")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(88))
                 {
-                    AppSettings.Score += score;
+                    choice88 += 1;
                     DoAnswer();
                 }
             };
@@ -569,71 +564,62 @@ namespace CorrectionOfNature.Views
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(1))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(2))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(3))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(4))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(5))
                 {
+                    choice5 += 1;
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(6))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(7))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(8))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(9))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(10))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(11))
                 {
                     DoAnswer();
-                    //return;
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(12))
                 {
+                    choice12 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -699,6 +685,7 @@ namespace CorrectionOfNature.Views
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(25))
                 {
+                    choice25 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -754,6 +741,7 @@ namespace CorrectionOfNature.Views
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(36))
                 {
+                    choice36 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -804,6 +792,7 @@ namespace CorrectionOfNature.Views
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(46))
                 {
+                    choice46 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -829,6 +818,7 @@ namespace CorrectionOfNature.Views
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(51))
                 {
+                    choice51 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -869,6 +859,7 @@ namespace CorrectionOfNature.Views
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
                     && ((QuestionViewModel)BindingContext).CheckIfCorrect(59))
                 {
+                    choice59 += 1;
                     DoAnswer();
                 }
                 else if (((QuestionViewModel)BindingContext).CheckQuestion("Нет")
@@ -1034,6 +1025,34 @@ namespace CorrectionOfNature.Views
 
         private void NavigateToEndPage()
         {
+            AppSettings.Score1 = (choice7 + choice19 + choice22 + choice29 + choice41
+                + choice44 + choice63 + choice66 + choice73 + choice85 + choice88 + choice51) * 2;
+
+            AppSettings.Score2 = (choice2 + choice15 + choice24 + choice34 + choice37
+                + choice56 + choice68 + choice78 + choice81 + choice12 + choice46 + choice59) * 2;
+
+            AppSettings.Score3 = (choice4 + choice14 + choice17 + choice26 + choice39
+                + choice48 + choice58 + choice61 + choice70 + choice80 + choice83 + choice36) * 2;
+
+            AppSettings.Score4 = (choice8 + choice20 + choice30 + choice42 + choice52
+                + choice64 + choice74 + choice86) * 3;
+
+            AppSettings.Score5 = (choice1 + choice11 + choice23 + choice33 + choice45
+                + choice55 + choice67 + choice77) * 3;
+
+            AppSettings.Score6 = (choice9 + choice21 + choice43 + choice75 + choice87) * 3;
+
+            AppSettings.Score7 = (choice16 + choice27 + choice38 + choice49 + choice60
+                + choice71 + choice82 + choice5) * 3;
+
+            AppSettings.Score8 = (choice10 + choice32 + choice54 + choice76) * 6;
+
+            AppSettings.Score9 = (choice3 + choice13 + choice35 + choice47 + choice57
+                + choice69 + choice79 + choice25) * 3;
+
+            AppSettings.Score10 = (choice6 + choice18 + choice28 + choice40 + choice50
+                + choice62 + choice72 + choice84) * 3;
+
             Application.Current.MainPage = new ThanksForPlaying();
         }
     }
