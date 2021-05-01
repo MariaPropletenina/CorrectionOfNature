@@ -25,11 +25,11 @@ namespace CorrectionOfNature.Views.Menu
         double _pagePositionX;
         double _flyoutTranslationX;
 
-        public ChatMenu(string username)
+        public ChatMenu()
         {
             InitializeComponent();
 
-            BindingContext = vm = new ChatPageViewModel(username);
+            BindingContext = vm = new ChatPageViewModel(AppSettings.Username);
 
             _scale = ChatContent.Scale;
             _pagePositionX = ChatContent.TranslationX;

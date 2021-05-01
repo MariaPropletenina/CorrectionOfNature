@@ -1,4 +1,5 @@
 ﻿using CorrectionOfNature.Tables;
+using CorrectionOfNature.Views.Menu;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,11 @@ namespace CorrectionOfNature.Views
             lblScore8.Text = AppSettings.Score8.ToString();
             lblScore9.Text = AppSettings.Score9.ToString();
             lblScore10.Text = AppSettings.Score10.ToString();
+        }
+
+        private void TaskButton_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new RecommendMenu();
         }
 
         /*public void InsertUser()

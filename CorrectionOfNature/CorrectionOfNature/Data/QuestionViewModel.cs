@@ -207,6 +207,11 @@ namespace CorrectionOfNature.Data
         {
             IsLoading = true;
 
+            /*for (int i = 0; i < QuestionList.Count; i++)
+            {
+                
+            }*/
+
             int questionNumber = rnd.Next(0, QuestionList.Count);
             XamarinQuiz selectedItem = QuestionList[questionNumber];
 

@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Timers;
-//using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -19,18 +18,10 @@ namespace CorrectionOfNature.Views
     {
         public static Timer MyTimer;
         public event EventHandler ToggleMenu;
-        //Context Context = DependencyService.Get<TodoItemDatabase>().GetItemsAsync();
-        //var Activity = (Activity)Context;
 
         public TaskPage()
         {
             InitializeComponent();
-            //OnAppearing();
-            /*Timer = new System.Timers.Timer(1000); //In milliseconds
-            Timer.Elapsed += new ElapsedEventHandler(OnAppearing);
-            Timer.AutoReset = true;
-            Timer.Enabled = true;*/
-            //RunThis();
         }
 
         void OnMenuTapped(object sender, System.EventArgs e)
@@ -42,25 +33,7 @@ namespace CorrectionOfNature.Views
         {
             TodoItemDatabase database = await TodoItemDatabase.Instance;
             listView.ItemsSource = await database.GetItemsAsync();
-            //BindingContext = listView.ItemsSource as TodoItem;
         }
-
-        private void RunThis()
-        {
-            
-            MyTimer = new System.Timers.Timer(1000); //In milliseconds
-            MyTimer.Elapsed += new ElapsedEventHandler(OnAppearing);
-            MyTimer.AutoReset = true;
-            MyTimer.Enabled = true;
-        }
-
-        /*protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-
-            TodoItemDatabase database = await TodoItemDatabase.Instance;
-            listView.ItemsSource = await database.GetItemsAsync();
-        }*/
 
         async void OnItemAdded(object sender, EventArgs e)
         {
@@ -68,7 +41,6 @@ namespace CorrectionOfNature.Views
             {
                 BindingContext = new TodoItem()
             });
-            //OnAppearing();
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -80,7 +52,6 @@ namespace CorrectionOfNature.Views
                     BindingContext = e.SelectedItem as TodoItem
                 });
             }
-            //OnAppearing();
         }
 
         /*async void OnListItem(object sender, ItemsView e)

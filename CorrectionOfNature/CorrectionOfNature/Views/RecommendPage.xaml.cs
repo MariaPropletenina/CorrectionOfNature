@@ -12,7 +12,6 @@ namespace CorrectionOfNature.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecommendPage : ContentView
     {
-        //string username;
         public RecommendPage()
         {
             InitializeComponent();
@@ -25,9 +24,9 @@ namespace CorrectionOfNature.Views
             ToggleMenu?.Invoke(sender, e);
         }
 
-        private async void test_Clicked(object sender, EventArgs e)
+        private void test_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new TestPage(/*username*/));
+            App.Current.MainPage = new NavigationPage(new SingleQuiz());
         }
     }
 }

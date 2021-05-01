@@ -14,11 +14,9 @@ namespace CorrectionOfNature.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestPage : ContentPage
     {
-        string username;
-        public TestPage(/*string user*/)
+        public TestPage()
         {
             InitializeComponent();
-            //this.username = user;
 
             btnStart.IsEnabled = false;
 
@@ -31,12 +29,11 @@ namespace CorrectionOfNature.Views
 
         private async void TaskButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RecommendMenu(/*username*/));
+            await Navigation.PushAsync(new RecommendMenu());
         }
 
         public void NavigateToQuiz(object sender, EventArgs args)
         {
-            AppSettings.Username = entryUsername.Text;
             Application.Current.MainPage = new SingleQuiz();
         }
     }

@@ -15,21 +15,9 @@ namespace CorrectionOfNature.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AuthPage : ContentPage
     {
-        string name;
-        public AuthPage(/*string user*/)
+        public AuthPage()
         {
             InitializeComponent();
-            //this.username = user = nameEntry.Text;
-        }
-
-        public string UsernameElement()
-        {
-            return nameEntry.Text;
-        }
-
-        public string Username()
-        {
-            return name;
         }
 
         async private void LoginButton_Clicked(object sender, EventArgs e)
@@ -42,8 +30,8 @@ namespace CorrectionOfNature.Views
 
             if (myquery != null)
             {
-                name = UsernameElement();
-                App.Current.MainPage = new NavigationPage(new TestPage(/*nameEntry.Text*/));
+                AppSettings.Username = nameEntry.Text;
+                App.Current.MainPage = new NavigationPage(new SingleQuiz());
             }
             else
             {

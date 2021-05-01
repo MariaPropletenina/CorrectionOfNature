@@ -29,20 +29,29 @@ namespace CorrectionOfNature.Views
 
         async void OnItemAdded(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new TodoItemPage
+            //Application.Current.MainPage = new ThanksForPlaying();
+            App.Current.MainPage = new NavigationPage(new TodoItemPage
             {
                 BindingContext = new TodoItem()
             });
+            /*await Navigation.PushAsync(new TodoItemPage
+            {
+                BindingContext = new TodoItem()
+            });*/
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new TodoItemPage
+                App.Current.MainPage = new NavigationPage(new TodoItemPage
                 {
                     BindingContext = e.SelectedItem as TodoItem
                 });
+                /*await Navigation.PushAsync(new TodoItemPage
+                {
+                    BindingContext = e.SelectedItem as TodoItem
+                });*/
             }
         }
     }

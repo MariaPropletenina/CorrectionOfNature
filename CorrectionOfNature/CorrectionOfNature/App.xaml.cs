@@ -5,7 +5,6 @@ using Xamarin.Forms.Xaml;
 using SQLite;
 using CorrectionOfNature.Tables;
 using System.IO;
-//using Microsoft.WindowsAzure.MobileServices;
 
 namespace CorrectionOfNature
 {
@@ -28,11 +27,10 @@ namespace CorrectionOfNature
 
     public partial class App : Application
     {
-        //string user;
         public App()
         {
             InitializeComponent();
-            /*var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
+            var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
             var db = new SQLiteConnection(dbpath);
             db.CreateTable<XamarinQuiz>();
             db.CreateTable<UserScore>();
@@ -835,10 +833,10 @@ namespace CorrectionOfNature
             db.Insert(item85);
             db.Insert(item86);
             db.Insert(item87);
-            db.Insert(item88);*/
+            db.Insert(item88);
 
             MainPage = new NavigationPage(new AuthPage());
-            //MainPage = new NavigationPage(new ChatMenu(user));
+            //MainPage = new NavigationPage(new ChatMenu());
             //MainPage = new NavigationPage(new MainPage());
         }
 

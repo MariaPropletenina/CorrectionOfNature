@@ -12,9 +12,6 @@ namespace CorrectionOfNature.Views.Menu
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecommendMenu : ContentPage
     {
-        //string username;
-        //MenuPage menuPage;
-
         const float FlyoutCornerRadius = 25f;
 
         bool _isFlyoutOpen = false;
@@ -22,11 +19,9 @@ namespace CorrectionOfNature.Views.Menu
         uint _flyoutSpeed = 200;
         double _pagePositionX;
         double _flyoutTranslationX;
-        public RecommendMenu(/*string user*/)
+        public RecommendMenu()
         {
             InitializeComponent();
-            //this.username = user;
-            //menuPage = new MenuPage(username);
             _scale = MainContent.Scale;
             _pagePositionX = MainContent.TranslationX;
             MainContent.SizeChanged += OnMainContentSizeChanged;

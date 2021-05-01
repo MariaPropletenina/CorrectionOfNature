@@ -3,52 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CorrectionOfNature.Views.ThanksForPlaying">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="White">
             <!--<Label x:Name="lblUsername"
                    FontAttributes="Bold"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                    Text="Tu puntaje es" />-->
-            <Label HorizontalTextAlignment="Center" Text="Демонстративность" />
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,20,0,0" Text="Демонстративность" />
             <Label x:Name="lblScore1"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Застревание" />
+                   Margin="0,-35,30,0"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,5,0,0" Text="Застревание" />
             <Label x:Name="lblScore2"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Педантичность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Педантичность" />
             <Label x:Name="lblScore3"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Возбудимость" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Возбудимость" />
             <Label x:Name="lblScore4"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Гипертимность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Гипертимность" />
             <Label x:Name="lblScore5"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Дистимность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Дистимность" />
             <Label x:Name="lblScore6"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Тревожность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Тревожность" />
             <Label x:Name="lblScore7"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Экзальтированность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Экзальтированность" />
             <Label x:Name="lblScore8"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Эмотивность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Эмотивность" />
             <Label x:Name="lblScore9"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
-            <Label HorizontalTextAlignment="Center" Text="Циклотимность" />
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,-20,0,0" Text="Циклотимность" />
             <Label x:Name="lblScore10"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center"/>
+                   Margin="0,-35,30,20"
+                   TextColor="#5246EA"
+                   HorizontalTextAlignment="End"/>
+            <Button x:Name="TaskButton" Text="Советы" Margin="30" VerticalOptions="CenterAndExpand" Clicked="TaskButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

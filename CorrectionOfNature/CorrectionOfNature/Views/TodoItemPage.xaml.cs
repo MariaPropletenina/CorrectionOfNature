@@ -1,4 +1,5 @@
 ﻿using CorrectionOfNature.Data;
+using CorrectionOfNature.Views.Menu;
 using CorrectionOfNature.Tables;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,8 @@ namespace CorrectionOfNature.Views
             var todoItem = (TodoItem)BindingContext;
             TodoItemDatabase database = await TodoItemDatabase.Instance;
             await database.SaveItemAsync(todoItem);
-            await Navigation.PopAsync();
+            //await Navigation.PopAsync();
+            App.Current.MainPage = new NavigationPage(new MainPage());
         }
 
         async void OnDeleteClicked(object sender, EventArgs e)
@@ -32,12 +34,14 @@ namespace CorrectionOfNature.Views
             var todoItem = (TodoItem)BindingContext;
             TodoItemDatabase database = await TodoItemDatabase.Instance;
             await database.DeleteItemAsync(todoItem);
-            await Navigation.PopAsync();
+            //await Navigation.PopAsync();
+            App.Current.MainPage = new NavigationPage(new MainPage());
         }
 
         async void OnCancelClicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            //await Navigation.PopAsync();
+            App.Current.MainPage = new NavigationPage(new MainPage());
         }
     }
 }

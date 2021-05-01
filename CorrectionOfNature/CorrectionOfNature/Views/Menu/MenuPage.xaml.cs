@@ -16,55 +16,41 @@ namespace CorrectionOfNature.Views.Menu
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentView
     {
-        //AuthPage AuthPage = new AuthPage();
-
-        //string username;
-        public MenuPage(/*string user*/)
+        public MenuPage()
         {
             SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
-            //UsernameLabel.Text = authPage.Username();
-            //this.username = user;
-            //UsernameLabel.Text = username;
-            /*var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
-            var db = new SQLiteConnection(dbpath);
-            var un = db.Table<User>()
-            var username = db.Table<User>().Where(u => u.CurrentUser.Equals(u.UserName));
-            UsernameLabel.Text = username.ToString();*/
-            /*if (username != null)
-            {
-                UsernameLabel.Text = username.ToString();
-            }*/
+            UsernameLabel.Text = AppSettings.Username;
         }
 
-        private async void LogoutButton_Clicked(object sender, EventArgs e)
+        private void LogoutButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AuthPage());
+            Application.Current.MainPage = new AuthPage();
         }
 
-        private async void RecommendButton_Clicked(object sender, EventArgs e)
+        private void RecommendButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RecommendMenu(/*username*/));
+            Application.Current.MainPage = new RecommendMenu();
         }
 
-        private async void TaskButton_Clicked(object sender, EventArgs e)
+        private void TaskButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            Application.Current.MainPage = new MainPage();
         }
 
-        private async void ReportButton_Clicked(object sender, EventArgs e)
+        private void ReportButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ReportMenu());
+            Application.Current.MainPage = new ReportMenu();
         }
 
-        private async void ConfiguratorButton_Clicked(object sender, EventArgs e)
+        private void ConfiguratorButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ConfiguratorMenu());
+            Application.Current.MainPage = new ConfiguratorMenu();
         }
 
-        private async void ChatButton_Clicked(object sender, EventArgs e)
+        private void ChatButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ChatMenu(authPage.Username()));
+            Application.Current.MainPage = new ChatMenu();
         }
     }
 }

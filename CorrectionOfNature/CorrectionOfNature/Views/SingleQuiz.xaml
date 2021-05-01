@@ -8,7 +8,7 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
             <StackLayout x:Name="slQuestion" IsVisible="true">
                 <Label x:Name="lblQuestion"
                        FontAttributes="Bold"
