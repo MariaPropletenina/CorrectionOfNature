@@ -6,8 +6,8 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <Image Source="personality.jpg" HeightRequest="100" Margin="0,50,0,0" />
-            <Label Text="Имя"
-                   Margin="-235,50,0,0"
+            <Label Text="Логин"
+                   Margin="-220,50,0,0"
                    HorizontalOptions="Center"
                    FontSize="16"
                    FontAttributes="Bold"

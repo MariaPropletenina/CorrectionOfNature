@@ -28,11 +28,12 @@ namespace CorrectionOfNature.Views
 
             var item = new User()
             {
-                UserName = nameEntry.Text,
+                //UserName = nameEntry.Text,
+                Login = loginEntry.Text,
                 Email = emailEntry.Text,
                 Password = passwordEntry.Text,
                 PhoneNumber = phoneNumberEntry.Text,
-                CurrentUser = nameEntry.Text
+                //CurrentUser = nameEntry.Text
             };
 
             db.Insert(item);

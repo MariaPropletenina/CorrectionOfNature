@@ -1,4 +1,4 @@
-﻿using CorrectionOfNature.Views;
+﻿using CorrectionOfNature.Views.Menu;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -835,9 +835,9 @@ namespace CorrectionOfNature
             db.Insert(item87);
             db.Insert(item88);
 
-            MainPage = new NavigationPage(new AuthPage());
+            //MainPage = new NavigationPage(new AuthPage());
             //MainPage = new NavigationPage(new ChatMenu());
-            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

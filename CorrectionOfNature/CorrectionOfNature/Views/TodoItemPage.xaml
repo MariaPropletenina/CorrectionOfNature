@@ -12,8 +12,10 @@
         <Entry Text="{Binding Notes}" />
         <Label Text="Начать с" />
         <DatePicker x:Name="StartDate" Date="{Binding StartDate}" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
+        <TimePicker x:Name="StartTime" Time="{Binding StartTime}" Format="T" />
         <Label Text="Закончить к" />
         <DatePicker x:Name="EndDate" Date="{Binding EndDate}" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
+        <TimePicker x:Name="EndTime" Time="{Binding EndTime}" Format="T" />
         <Label Text="Статус" />
         <Switch IsToggled="{Binding Done}" />
         <Button Text="Сохранить" Clicked="OnSaveClicked" />

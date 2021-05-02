@@ -26,7 +26,7 @@ namespace CorrectionOfNature.Views
             var db = new SQLiteConnection(dbpath);
 
             var myquery = db.Table<User>()
-                .Where(u => u.UserName.Equals(nameEntry.Text) && u.Password.Equals(passwordEntry.Text)).FirstOrDefault();
+                .Where(u => u.Login.Equals(nameEntry.Text) && u.Password.Equals(passwordEntry.Text)).FirstOrDefault();
 
             if (myquery != null)
             {

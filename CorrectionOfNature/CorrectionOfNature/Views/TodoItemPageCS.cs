@@ -24,8 +24,14 @@ namespace CorrectionOfNature.Views
             var startDate = new DatePicker();
             startDate.SetBinding(DatePicker.DateProperty, "StartDate");
 
+            var startTime = new TimePicker();
+            startTime.SetBinding(TimePicker.TimeProperty, "StartTime");
+
             var endDate = new DatePicker();
             endDate.SetBinding(DatePicker.DateProperty, "EndDate");
+
+            var endTime = new TimePicker();
+            endTime.SetBinding(TimePicker.TimeProperty, "EndTime");
 
             var doneSwitch = new Switch();
             doneSwitch.SetBinding(Switch.IsToggledProperty, "Done");
@@ -66,8 +72,12 @@ namespace CorrectionOfNature.Views
                     notesEntry,
                     new Label { Text = "StartDate" },
                     startDate,
+                    new Label { Text = "StartTime" },
+                    startTime,
                     new Label { Text = "EndDate" },
                     endDate,
+                    new Label { Text = "EndTime" },
+                    endTime,
                     new Label { Text = "Done" },
                     doneSwitch,
                     saveButton,

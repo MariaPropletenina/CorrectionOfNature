@@ -6,14 +6,22 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <Image Source="personality.jpg" HeightRequest="100" Margin="0,25,0,0" />
-            <Label Text="Имя"
+            <!--<Label Text="Имя"
                    Margin="-240,30,0,0"
                    HorizontalOptions="Center"
                    FontSize="14"
                    FontAttributes="Bold"
                    TextColor="#5246EA" />
             <Image Source="user.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
-            <Entry x:Name="nameEntry" TextColor="#5246EA" Margin="70,0" />
+            <Entry x:Name="nameEntry" TextColor="#5246EA" Margin="70,0" />-->
+            <Label Text="Логин"
+                   Margin="-230,30,0,0"
+                   HorizontalOptions="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   TextColor="#5246EA" />
+            <Image Source="user.png" HeightRequest="18" WidthRequest="18" Margin="240,-25,0,0" />
+            <Entry x:Name="loginEntry" TextColor="#5246EA" Margin="70,0" />
             <Label Text="Email"
                    Margin="-230,10,0,0"
                    HorizontalOptions="Center"
