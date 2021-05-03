@@ -66,8 +66,8 @@
             </StackLayout>
 
             <StackLayout Margin="0,-100,0,0" Grid.Row="1">
-                <Button Text="Мой профиль" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
-                <Button Text="Настройки" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
+                <Button x:Name="ProfileButton" Text="Мой профиль" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" Clicked="ProfileButton_Clicked" />
+                <Button x:Name="SettingsButton" Text="Настройки" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
                 <Button x:Name="LogoutButton" Text="Выход" TextColor="Black" HeightRequest="30" BackgroundColor="SkyBlue" Clicked="LogoutButton_Clicked" />
             </StackLayout>
         </Grid>

@@ -837,7 +837,8 @@ namespace CorrectionOfNature
 
             //MainPage = new NavigationPage(new AuthPage());
             //MainPage = new NavigationPage(new ChatMenu());
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new ProfileMenu());
         }
 
         protected override void OnStart()

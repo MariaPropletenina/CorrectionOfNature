@@ -52,5 +52,10 @@ namespace CorrectionOfNature.Views.Menu
         {
             Application.Current.MainPage = new ChatMenu();
         }
+
+        private void ProfileButton_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new ProfileMenu();
+        }
     }
 }
