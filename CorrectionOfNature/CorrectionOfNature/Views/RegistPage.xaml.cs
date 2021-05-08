@@ -37,17 +37,19 @@ namespace CorrectionOfNature.Views
             };
 
             db.Insert(item);
+            AppSettings.Email = emailEntry.Text;
+            AppSettings.PhoneNumber = phoneNumberEntry.Text;
             Device.BeginInvokeOnMainThread(async () =>
             {
                 var result = await this.DisplayAlert("Добро Пожаловать!", "Регистрация пользователя прошла успешно.", "Да", "Отмена");
 
-                if (result) await Navigation.PushAsync(new AuthPage());
+                if (result) Application.Current.MainPage = new AuthPage();
             });
         }
 
         private async void SignInButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AuthPage());
+            Application.Current.MainPage = new AuthPage();
         }
     }
 }

@@ -29,7 +29,6 @@ namespace CorrectionOfNature.Views
 
         async void OnItemAdded(object sender, EventArgs e)
         {
-            //Application.Current.MainPage = new ThanksForPlaying();
             App.Current.MainPage = new NavigationPage(new TodoItemPage
             {
                 BindingContext = new TodoItem()

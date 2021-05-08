@@ -54,13 +54,5 @@ namespace CorrectionOfNature.Data
         {
             return Database.DeleteAsync(item);
         }
-
-        /*public async Task<int> UpdateItemAsync()
-        {
-            //return Database.Table<TodoItem>().ToListAsync();
-            TodoItemDatabase database = await TodoItemDatabase.Instance;
-            listView.ItemsSource = await database.GetItemsAsync();
-            //BindingContext = listView.ItemsSource as TodoItem;
-        }*/
     }
 }

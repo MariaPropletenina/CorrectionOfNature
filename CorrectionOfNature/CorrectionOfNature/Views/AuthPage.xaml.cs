@@ -31,6 +31,10 @@ namespace CorrectionOfNature.Views
             if (myquery != null)
             {
                 AppSettings.Username = nameEntry.Text;
+                //var query1 = db.Table<User>().Select(u => u.Email == myquery.Email);
+                //AppSettings.Email = db.Table<User>().Select(u => u.Email.Equals(myquery.Email)).ToString();
+                //db.Query<TodoItem>("SELECT [Email] FROM [User] WHERE [Done] = 0");
+                //AppSettings.PhoneNumber = db.Table<User>().Select(u => u.PhoneNumber.Equals(myquery.PhoneNumber)).ToString();
                 App.Current.MainPage = new NavigationPage(new SingleQuiz());
             }
             else
@@ -40,10 +44,10 @@ namespace CorrectionOfNature.Views
                     var result = await this.DisplayAlert("Ошибка!", "Неправильно введено имя пользователя или пароль.", "Да", "Отмена");
 
                     if (result)
-                        await Navigation.PushAsync(new AuthPage());
+                        Application.Current.MainPage = new AuthPage();
                     else
                     {
-                        await Navigation.PushAsync(new AuthPage());
+                        Application.Current.MainPage = new AuthPage();
                     }
                 });
             }
@@ -51,7 +55,7 @@ namespace CorrectionOfNature.Views
 
         async private void SignUpButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistPage());
+            Application.Current.MainPage = new RegistPage();
         }
     }
 }

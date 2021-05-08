@@ -1,10 +1,11 @@
-﻿using CorrectionOfNature.Views.Menu;
+﻿using CorrectionOfNature.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SQLite;
 using CorrectionOfNature.Tables;
 using System.IO;
+using CorrectionOfNature.DependencyServices;
 
 namespace CorrectionOfNature
 {
@@ -23,6 +24,8 @@ namespace CorrectionOfNature
         public static int Score9 = 0;
         public static int Score10 = 0;
         public static string Username = "";
+        public static string Email = "";
+        public static string PhoneNumber = "";
     }
 
     public partial class App : Application
@@ -30,6 +33,7 @@ namespace CorrectionOfNature
         public App()
         {
             InitializeComponent();
+            DependencyService.Get<INotificationManager>().Initialize();
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
             var db = new SQLiteConnection(dbpath);
             db.CreateTable<XamarinQuiz>();
@@ -835,10 +839,12 @@ namespace CorrectionOfNature
             db.Insert(item87);
             db.Insert(item88);
 
-            //MainPage = new NavigationPage(new AuthPage());
+            MainPage = new NavigationPage(new AuthPage());
             //MainPage = new NavigationPage(new ChatMenu());
             //MainPage = new NavigationPage(new MainPage());
-            MainPage = new NavigationPage(new ProfileMenu());
+            //MainPage = new NavigationPage(new ProfileMenu());
+            //MainPage = new NavigationPage(new LocalNotificationPage());
+            //MainPage = new NavigationPage(new Page1());
         }
 
         protected override void OnStart()

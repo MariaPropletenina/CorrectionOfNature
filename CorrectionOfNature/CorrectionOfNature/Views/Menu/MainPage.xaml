@@ -42,7 +42,7 @@
                             </Image.GestureRecognizers>
                         </Image>
                         <Label Text="Задачи" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="5,10,0,0" />
-                        <Button Clicked="OnItemAdded" WidthRequest="50" ImageSource="plus.png" HorizontalOptions="EndAndExpand" />
+                        <Button Clicked="OnItemAdded" CornerRadius="30" WidthRequest="50" ImageSource="plus.png" HorizontalOptions="EndAndExpand" />
                     </StackLayout>
                 </Grid>
 

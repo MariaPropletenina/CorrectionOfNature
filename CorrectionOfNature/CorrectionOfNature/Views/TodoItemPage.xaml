@@ -5,21 +5,24 @@
              BackgroundColor="White"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              Title="{Binding Name}">
-    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+    <StackLayout Margin="20" x:Name="stackLayout" VerticalOptions="StartAndExpand">
         <Label Text="Задача" />
         <Entry Text="{Binding Name}" />
         <Label Text="Заметки/Цель" />
         <Entry Text="{Binding Notes}" />
         <Label Text="Начать с" />
-        <DatePicker x:Name="StartDate" Date="{Binding StartDate}" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
-        <TimePicker x:Name="StartTime" Time="{Binding StartTime}" Format="T" />
+        <DatePicker x:Name="StartDate" Date="{Binding StartDate}" Margin="0,0,100,0" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
+        <TimePicker x:Name="StartTime" Time="{Binding StartTime}" Margin="0,-51,0,0" Format="T" HorizontalOptions="End" />
         <Label Text="Закончить к" />
-        <DatePicker x:Name="EndDate" Date="{Binding EndDate}" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
-        <TimePicker x:Name="EndTime" Time="{Binding EndTime}" Format="T" />
-        <Label Text="Статус" />
-        <Switch IsToggled="{Binding Done}" />
-        <Button Text="Сохранить" Clicked="OnSaveClicked" />
-        <Button Text="Удалить" Clicked="OnDeleteClicked" />
-        <Button Text="Отмена" Clicked="OnCancelClicked" />
+        <DatePicker x:Name="EndDate" Date="{Binding EndDate}" Margin="0,0,100,0" MinimumDate="{x:Static system:DateTime.Today}" Format="D" />
+        <TimePicker x:Name="EndTime" Time="{Binding EndTime}" HorizontalOptions="End" Margin="0,-51,0,0" Format="T" />
+        <Label Text="Напомнить мне о задаче через" />
+        <TimePicker x:Name="RememberTime" Margin="0,0,260,0" Time="00:00:00" Format="T" />
+        <Switch x:Name="SwitchRemember" Margin="0,-10,0,0" />
+        <Label Text="Статус" Margin="0,10,0,0" />
+        <Switch IsToggled="{Binding Done}" Margin="0,-30,0,0" />
+        <Button Text="Сохранить" CornerRadius="30" Margin="0,20,0,0" Clicked="OnSaveClicked" />
+        <Button Text="Удалить" CornerRadius="30" Clicked="OnDeleteClicked" />
+        <Button Text="Отмена" CornerRadius="30" Clicked="OnCancelClicked" />
     </StackLayout>
 </ContentPage>

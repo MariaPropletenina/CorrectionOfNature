@@ -4,11 +4,6 @@
              x:Class="CorrectionOfNature.Views.ThanksForPlaying">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="White">
-            <!--<Label x:Name="lblUsername"
-                   FontAttributes="Bold"
-                   FontSize="Large"
-                   HorizontalTextAlignment="Center"
-                   Text="Tu puntaje es" />-->
             <Label HorizontalTextAlignment="Start" FontSize="Large" FontAttributes="Bold" TextColor="#5246EA" Margin="30,20,0,0" Text="Демонстративность" />
             <Label x:Name="lblScore1"
                    FontSize="Large"
