@@ -36,16 +36,16 @@
             <BoxView BackgroundColor="White" HeightRequest="1.5" HorizontalOptions="FillAndExpand" />
         </StackLayout>
 
-        <StackLayout Grid.Row="1" Padding="10, 20, 0, 0">
+        <StackLayout Grid.Row="1" Padding="0, 10, 0, 0">
             <Button Text="Советы" x:Name="RecommendButton" Clicked="RecommendButton_Clicked" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
             <Button Text="Задачи" x:Name="TaskButton" Clicked="TaskButton_Clicked" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
             <Button Text="Отчёт" x:Name="ReportButton" Clicked="ReportButton_Clicked" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
             <Button Text="Конфигуратор" x:Name="ConfiguratorButton" Clicked="ConfiguratorButton_Clicked" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
             <Button Text="Чат" x:Name="ChatButton" Clicked="ChatButton_Clicked" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
-            <BoxView BackgroundColor="White" HeightRequest="1.5" Margin="40,20,40,0" HorizontalOptions="FillAndExpand" />
+            <BoxView BackgroundColor="White" HeightRequest="1.5" Margin="40,30,40,0" HorizontalOptions="FillAndExpand" />
         </StackLayout>
 
-        <Grid Grid.Row="2" Padding="35, 0, 25, 230">
+        <Grid Grid.Row="2" Padding="25, -1700, 25, 0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="6*" />
                 <RowDefinition Height="*" />
@@ -65,7 +65,7 @@
                 
             </StackLayout>
 
-            <StackLayout Margin="0,-30,0,0" Grid.Row="1">
+            <StackLayout Grid.Row="1">
                 <Button x:Name="ProfileButton" Text="Мой профиль" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" Clicked="ProfileButton_Clicked" />
                 <Button x:Name="SettingsButton" Text="Настройки" TextColor="Black" BackgroundColor="SkyBlue" HeightRequest="30" />
                 <Button x:Name="LogoutButton" Text="Выход" TextColor="Black" HeightRequest="30" BackgroundColor="SkyBlue" Clicked="LogoutButton_Clicked" />

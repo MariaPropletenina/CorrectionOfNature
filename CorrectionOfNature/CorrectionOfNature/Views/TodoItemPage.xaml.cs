@@ -38,14 +38,17 @@ namespace CorrectionOfNature.Views
             await database.SaveItemAsync(todoItem);
             //await Navigation.PopAsync();
 
-            notificationNumber++;
-            string title = $"Уведомление #{notificationNumber}";
-            string message = $"Срок выполнения задачи '{todoItem.Name}' истёк!";
-            TimeSpan timeSpan = EndDate.Date - StartDate.Date;
-            //TimeSpan timeSpan = this.EndTime.Time;
-            //DateTime dateTime = this.EndDate.Date;
-            //TimeSpan currentDateTime = new TimeSpan(/*dateTime.Year, dateTime.Month, dateTime.Day, */timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
-            notificationManager.SendNotification(title, message, DateTime.Now.AddDays(timeSpan.Days));
+            if (!SwitchDone.IsToggled/* && (EndDate.Date - StartDate.Date).Days*/)
+            {
+                notificationNumber++;
+                string title = $"Уведомление #{notificationNumber}";
+                string message = $"Срок выполнения задачи '{todoItem.Name}' истёк!";
+                TimeSpan timeSpan = EndDate.Date - StartDate.Date;
+                //TimeSpan timeSpan = this.EndTime.Time;
+                //DateTime dateTime = this.EndDate.Date;
+                //TimeSpan currentDateTime = new TimeSpan(/*dateTime.Year, dateTime.Month, dateTime.Day, */timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+                notificationManager.SendNotification(title, message, DateTime.Now.AddDays(timeSpan.Days));
+            }
 
             if (SwitchRemember.IsToggled)
             {
