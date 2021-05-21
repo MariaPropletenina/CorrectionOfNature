@@ -19,9 +19,7 @@ namespace CorrectionOfNature.Views
         public ThanksForPlaying()
         {
             InitializeComponent();
-            //InsertUser();
-            //lblScore.Text = AppSettings.Score.ToString();
-            //lblUsername.Text = AppSettings.Username;
+            InsertUser();
             lblScore1.Text = AppSettings.Score1.ToString();
             lblScore2.Text = AppSettings.Score2.ToString();
             lblScore3.Text = AppSettings.Score3.ToString();
@@ -39,7 +37,7 @@ namespace CorrectionOfNature.Views
             Application.Current.MainPage = new RecommendMenu();
         }
 
-        /*public void InsertUser()
+        public void InsertUser()
         {
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
             var db = new SQLiteConnection(dbpath);
@@ -47,10 +45,19 @@ namespace CorrectionOfNature.Views
             UserScore item = new UserScore()
             {
                 Username = AppSettings.Username,
-                //Score = AppSettings.Score
+                Score1 = AppSettings.Score1,
+                Score2 = AppSettings.Score2,
+                Score3 = AppSettings.Score3,
+                Score4 = AppSettings.Score4,
+                Score5 = AppSettings.Score5,
+                Score6 = AppSettings.Score6,
+                Score7 = AppSettings.Score7,
+                Score8 = AppSettings.Score8,
+                Score9 = AppSettings.Score9,
+                Score10 = AppSettings.Score10
             };
 
             db.Insert(item);
-        }*/
+        }
     }
 }

@@ -11,8 +11,6 @@ namespace CorrectionOfNature
 {
     public class AppSettings
     {
-        public const int QUESTIONS_COUNT = 88;
-        public static int CurrentQuestion = 1;
         public static int Score1 = 0;
         public static int Score2 = 0;
         public static int Score3 = 0;
