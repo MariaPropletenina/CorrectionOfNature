@@ -24,6 +24,7 @@ namespace CorrectionOfNature
         public static string Username = "";
         public static string Email = "";
         public static string PhoneNumber = "";
+        public static int TestResult = 0;
     }
 
     public partial class App : Application
@@ -838,6 +839,7 @@ namespace CorrectionOfNature
             db.Insert(item88);
 
             MainPage = new NavigationPage(new AuthPage());
+            //MainPage = new NavigationPage(new RecommendMenu());
             //MainPage = new NavigationPage(new ChatMenu());
             //MainPage = new NavigationPage(new MainPage());
             //MainPage = new NavigationPage(new ProfileMenu());

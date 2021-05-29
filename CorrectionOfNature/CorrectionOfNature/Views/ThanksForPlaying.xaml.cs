@@ -20,6 +20,7 @@ namespace CorrectionOfNature.Views
         {
             InitializeComponent();
             InsertUser();
+            Result();
             lblScore1.Text = AppSettings.Score1.ToString();
             lblScore2.Text = AppSettings.Score2.ToString();
             lblScore3.Text = AppSettings.Score3.ToString();
@@ -58,6 +59,66 @@ namespace CorrectionOfNature.Views
             };
 
             db.Insert(item);
+        }
+
+        public void Result()
+        {
+            int[] array = new int[] { AppSettings.Score1, AppSettings.Score2, AppSettings.Score3,
+                                      AppSettings.Score4, AppSettings.Score5, AppSettings.Score6,
+                                      AppSettings.Score7, AppSettings.Score8, AppSettings.Score9, AppSettings.Score10 };
+
+            var resultMax = array.Max();
+
+            if (resultMax == AppSettings.Score1)
+            {
+                AppSettings.TestResult = 1;
+                lblResult.Text = "Больше всего выраженна Демонстративность";
+            }
+            else if (resultMax == AppSettings.Score2)
+            {
+                AppSettings.TestResult = 2;
+                lblResult.Text = "Больше всего выраженно Застревание";
+            }
+            else if (resultMax == AppSettings.Score3)
+            {
+                AppSettings.TestResult = 3;
+                lblResult.Text = "Больше всего выраженна Педантичность";
+            }
+            else if (resultMax == AppSettings.Score4)
+            {
+                AppSettings.TestResult = 4;
+                lblResult.Text = "Больше всего выраженна Возбудимость";
+            }
+            else if (resultMax == AppSettings.Score5)
+            {
+                AppSettings.TestResult = 5;
+                lblResult.Text = "Больше всего выраженна Гипертимность";
+            }
+            else if (resultMax == AppSettings.Score6)
+            {
+                AppSettings.TestResult = 6;
+                lblResult.Text = "Больше всего выраженна Дистимность";
+            }
+            else if (resultMax == AppSettings.Score7)
+            {
+                AppSettings.TestResult = 7;
+                lblResult.Text = "Больше всего выраженна Тревожность";
+            }
+            else if (resultMax == AppSettings.Score8)
+            {
+                AppSettings.TestResult = 8;
+                lblResult.Text = "Больше всего выраженна Экзальтированность";
+            }
+            else if (resultMax == AppSettings.Score9)
+            {
+                AppSettings.TestResult = 9;
+                lblResult.Text = "Больше всего выраженна Эмотивность";
+            }
+            else if (resultMax == AppSettings.Score10)
+            {
+                AppSettings.TestResult = 10;
+                lblResult.Text = "Больше всего выраженна Циклотимность";
+            }
         }
     }
 }

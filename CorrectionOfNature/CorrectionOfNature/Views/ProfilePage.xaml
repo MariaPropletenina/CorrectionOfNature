@@ -57,7 +57,7 @@
                     <Label Grid.Row="3" Grid.Column="2" Text="Followers" Style="{StaticResource stlBoardTitle}"/>
                     <Label Grid.Row="4" Grid.Column="2" Text="67k" Style="{StaticResource stlBoardDesc}"/>-->
                     <!--4. Contact information: Follow button-->
-                    <Button Grid.Row="5" Grid.Column="0" CornerRadius="40" Grid.ColumnSpan="3" Clicked="OnPickPhotoButtonClicked" BackgroundColor="#5246EA" Text="Поменять фото профиля" Margin="0,30,0,2" FontAttributes="Bold" FontSize="17" HeightRequest="45"/>
+                    <Button Grid.Row="5" Grid.Column="0" CornerRadius="40" Grid.ColumnSpan="3" Clicked="OnPickPhotoButtonClicked" BackgroundColor="#5246EA" Text="Изменить фото профиля" Margin="0,30,0,2" FontAttributes="Bold" FontSize="17" HeightRequest="45"/>
                 </Grid>
             </Frame>
         </StackLayout>

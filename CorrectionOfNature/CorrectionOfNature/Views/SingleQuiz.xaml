@@ -8,22 +8,19 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White">
-            <StackLayout x:Name="slQuestion" IsVisible="true">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout x:Name="slQuestion" Padding="20" IsVisible="true">
                 <Label x:Name="lblQuestion"
+                       TextColor="Black"
                        FontAttributes="Bold"
                        FontSize="Large"
+                       Margin="10"
                        HorizontalTextAlignment="Center"
                        Text="{Binding Question}" />
-                <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" 
+                <Button x:Name="btnAnswerOne" CornerRadius="30" Text="{Binding Answer1}" 
 				    IsEnabled="{Binding Answer1Enabled}" />
-                <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" 
+                <Button x:Name="btnAnswerTwo" CornerRadius="30" Text="{Binding Answer2}" 
 				    IsEnabled="{Binding Answer2Enabled}" />
-                <Label x:Name="lblMessage"
-                       FontAttributes="Italic"
-                       FontSize="Large"
-                       HorizontalTextAlignment="Center"
-                       Text="{Binding Message}" />
             </StackLayout>
 
             <ActivityIndicator x:Name="aiLoading"

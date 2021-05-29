@@ -64,7 +64,10 @@
                    Margin="0,-35,30,20"
                    TextColor="#5246EA"
                    HorizontalTextAlignment="End"/>
-            <Button x:Name="TaskButton" Text="Советы" Margin="30" VerticalOptions="CenterAndExpand" Clicked="TaskButton_Clicked" />
+            <BoxView BackgroundColor="#5246EA" Margin="30,0,30,30" HeightRequest="2"  HorizontalOptions="FillAndExpand" />
+            <Label HorizontalTextAlignment="Start" x:Name="lblResult" FontSize="Large" FontAttributes="Bold" TextColor="Red" Margin="30,-10,0,0" />
+            <BoxView BackgroundColor="#5246EA" Margin="30,30,30,0" HeightRequest="2"  HorizontalOptions="FillAndExpand" />
+            <Button x:Name="TaskButton" CornerRadius="30" Text="Перейти к советам" Margin="30,0,30,0" VerticalOptions="CenterAndExpand" Clicked="TaskButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

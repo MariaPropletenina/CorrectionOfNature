@@ -7,39 +7,15 @@
              mc:Ignorable="d"
              x:Class="CorrectionOfNature.Views.RecommendPage">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <StackLayout Margin="0, 0, 0, 0" 
-                         Padding="10, 15"
-                         Orientation="Horizontal"
-                         BackgroundColor="Purple"
-                         Spacing="15">
-                <Image Source="menu"
-                       VerticalOptions="CenterAndExpand">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnMenuTapped" />
-                    </Image.GestureRecognizers>
-                </Image>
-                <Label Text="Xamarin Month 2020"
-                       TextColor="White"
-                       FontSize="22"
-                       FontAttributes="Bold"
-                       VerticalOptions="CenterAndExpand"
-                       VerticalTextAlignment="Center"/>
+    <StackLayout BackgroundColor="White" Margin="10">
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lblType" FontSize="Large" TextDecorations="None" TextTransform="Uppercase"  TextColor="#5246EA" FontAttributes="Bold" Margin="10" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lbl" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label Text="Советы:" FontSize="Medium" TextColor="#5246EA" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lblRecommend" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Center"/>
             </StackLayout>
-        </Grid>
-
-        <StackLayout Grid.Row="1">
-            <Label Text="Советы!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"/>
-            <Button x:Name="test" Text="Тестирование" Clicked="test_Clicked"/>
-        </StackLayout>
-    </Grid>
+        </ScrollView>
+        <Button x:Name="test" Text="Пройти тестирование заново" Clicked="test_Clicked" CornerRadius="30" VerticalOptions="EndAndExpand"/>
+    </StackLayout>
 </ContentView>
