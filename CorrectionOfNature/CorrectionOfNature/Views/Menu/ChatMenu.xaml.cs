@@ -88,16 +88,5 @@ namespace CorrectionOfNature.Views.Menu
 
             _isFlyoutOpen = !_isFlyoutOpen;
         }
-
-        /*async void Button_Clicked(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(UserName.Text))
-            {
-                await DisplayAlert("Easy Chat", "Please enter username", "OK");
-                return;
-            }
-
-            await Navigation.PushAsync(new MyChat(UserName.Text));
-        }*/
     }
 }

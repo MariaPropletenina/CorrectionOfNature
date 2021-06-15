@@ -18,7 +18,6 @@
     </ContentPage.Resources>
 
     <Grid>
-
         <Grid x:Name="Flyout" BackgroundColor="Transparent" Margin="0" Padding="0">
             <Grid.GestureRecognizers>
                 <SwipeGestureRecognizer Direction="Left"
@@ -34,13 +33,6 @@
             </Frame.GestureRecognizers>
             <!--<views:ChatPage ToggleMenu="OnToggleMenu" />-->
 
-            <!--<StackLayout VerticalOptions="Center" 
-        HorizontalOptions="CenterAndExpand">
-                <Label x:Name="NameLabel" />
-                <Entry x:Name="UserName" Placeholder="What's your name?" WidthRequest="200"/>
-                <Button Text="Sign up" Clicked="Button_Clicked"></Button>
-            </StackLayout>-->
-
             <RelativeLayout>
                 <ListView Grid.Row="0" x:Name="MessagesListView" HasUnevenRows="true" SeparatorVisibility="None" ItemTemplate="{StaticResource MessageTemplateSelector}" ItemsSource="{Binding Messages}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}" />
                 <Grid x:Name="MessageControls" RowSpacing="1" ColumnSpacing="2" Padding="5" BackgroundColor="#EFEFF4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=MessagesListView, Property=Height,Factor=.91,Constant=0}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=MessagesListView, Property=Height,Factor=.09,Constant=0}">
@@ -54,8 +46,6 @@
                     <Button Grid.Column="1" Text="Отправить" CommandParameter="{Binding Source={x:Reference Name=txtMessage}, Path=Text}" Command="{Binding SendMessage}" />
                 </Grid>
             </RelativeLayout>
-
         </Frame>
-
     </Grid>
 </ContentPage>

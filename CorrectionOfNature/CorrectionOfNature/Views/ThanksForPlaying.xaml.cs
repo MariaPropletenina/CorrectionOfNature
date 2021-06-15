@@ -72,53 +72,76 @@ namespace CorrectionOfNature.Views
             if (resultMax == AppSettings.Score1)
             {
                 AppSettings.TestResult = 1;
-                lblResult.Text = "Больше всего выраженна Демонстративность";
+                lblResult.Text = "Больше всего выражена Демонстративность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score2)
             {
                 AppSettings.TestResult = 2;
-                lblResult.Text = "Больше всего выраженно Застревание";
+                lblResult.Text = "Больше всего выражено Застревание";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score3)
             {
                 AppSettings.TestResult = 3;
-                lblResult.Text = "Больше всего выраженна Педантичность";
+                lblResult.Text = "Больше всего выражена Педантичность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score4)
             {
                 AppSettings.TestResult = 4;
-                lblResult.Text = "Больше всего выраженна Возбудимость";
+                lblResult.Text = "Больше всего выражена Возбудимость";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score5)
             {
                 AppSettings.TestResult = 5;
-                lblResult.Text = "Больше всего выраженна Гипертимность";
+                lblResult.Text = "Больше всего выражена Гипертимность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score6)
             {
                 AppSettings.TestResult = 6;
-                lblResult.Text = "Больше всего выраженна Дистимность";
+                lblResult.Text = "Больше всего выражена Дистимность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score7)
             {
                 AppSettings.TestResult = 7;
-                lblResult.Text = "Больше всего выраженна Тревожность";
+                lblResult.Text = "Больше всего выражена Тревожность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score8)
             {
                 AppSettings.TestResult = 8;
-                lblResult.Text = "Больше всего выраженна Экзальтированность";
+                lblResult.Text = "Больше всего выражена Экзальтированность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score9)
             {
                 AppSettings.TestResult = 9;
-                lblResult.Text = "Больше всего выраженна Эмотивность";
+                lblResult.Text = "Больше всего выражена Эмотивность";
+                PassedForUser();
             }
             else if (resultMax == AppSettings.Score10)
             {
                 AppSettings.TestResult = 10;
-                lblResult.Text = "Больше всего выраженна Циклотимность";
+                lblResult.Text = "Больше всего выражена Циклотимность";
+                PassedForUser();
             }
+        }
+
+        public void PassedForUser()
+        {
+            var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "CorrectionNatureDB.db");
+            var db = new SQLiteConnection(dbpath);
+
+            TestPassed item = new TestPassed()
+            {
+                User = AppSettings.Username,
+                TestResult = AppSettings.TestResult
+            };
+            db.Insert(item);
         }
     }
 }
